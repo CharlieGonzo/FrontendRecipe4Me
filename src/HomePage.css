@@ -1,0 +1,111 @@
+/* Modern styling for the entire page */
+.homepage-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f2f5 40%, #ffeadb 100%);
+    padding: 20px;
+  }
+  
+  /* Navbar styles */
+  .navbar-custom {
+    background-color: transparent;
+  }
+  
+  .brand-logo {
+    font-size: 1.8rem;
+    color: #ff6347; /* Brighter, more vibrant color */
+  }
+  
+  .settings-icon i {
+    font-size: 1.5rem;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .settings-icon i:hover {
+    color: #ff6347;
+  }
+  
+  /* Welcome text styling */
+  .welcome-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Search bar customizations */
+  .search-input {
+    width: 60%;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-button {
+    padding: 10px 30px;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #ff3e1d;
+  }
+  
+  /* Recipe card styles */
+  .recipe-card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .recipe-img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .recipe-card-body {
+    padding: 20px;
+  }
+  
+  .recipe-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .recipe-text {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .view-recipe-btn {
+    background-color: #ff6347;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .view-recipe-btn:hover {
+    background-color: #ff3e1d;
+  }
+  

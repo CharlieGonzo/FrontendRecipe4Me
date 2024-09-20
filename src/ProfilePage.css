@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.profile-card {
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card {
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.add-recipe-button {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    margin-top: 20px; /* Space it nicely from other elements */
+}
+
+.recipe-button {
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.recipe-button:hover {
+    background: #007bff;
+    color: white;
+}

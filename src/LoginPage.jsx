@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Alert from 'react-bootstrap/Alert';
 import './LoginForm.css';
+import HomePage from "./HomePage";
+import { useNavigate } from "react-router-dom";
 
 
 function LoginPage(){
@@ -8,6 +10,8 @@ function LoginPage(){
   const [password, setPassword] = useState('');
   const [loginError,setLoginError] = useState(false);
   const [serverError,setServerError] = useState(false);
+  const [isLoggedIn,setLoggedIn] = useState(false);
+  const navigate = useNavigate(); // Use hook here
 
   const handleSubmit = async () => {
     console.log("here")
@@ -32,15 +36,14 @@ function LoginPage(){
       
         throw new Error(`HTTP error! Status: ${response.status}`);
       }else{
-        
+        navigate('/Home', {state: {username}})
       }
 
       
     
   };
 
-  return (
-    <div className="login-background"> {/* Apply the background class here */}
+  return<div className="login-background"> 
       <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
         <div className="card shadow" style={{ width: '30rem', borderRadius: '10px' }}>
           <div className="card-body">
@@ -90,7 +93,8 @@ function LoginPage(){
         </div>
       </div>
     </div>
-  );
+   
 }
+
 
 export default LoginPage;
