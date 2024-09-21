@@ -1,7 +1,7 @@
 /* Modern styling for the entire page */
 .homepage-container {
     min-height: 100vh;
-    background: linear-gradient(135deg, #f0f2f5 40%, #ffeadb 100%);
+    
     padding: 20px;
   }
   
@@ -32,6 +32,8 @@
     color: #333;
     font-weight: 600;
   }
+
+  
   
   /* Search bar customizations */
   .search-input {
@@ -41,7 +43,13 @@
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
+    transition: transform 0.3s ease; /* Smooth scaling over 0.3 seconds */
     transition: box-shadow 0.2s ease-in-out;
+  }
+
+  .search-input:hover{
+    transition: transform 0.3s ease; /* Smooth scaling over 0.3 seconds */
+    transform: scale(1.1); /* Use transform instead of scale */
   }
   
   .search-input:focus {
@@ -54,7 +62,7 @@
     border: none;
     border-radius: 50px;
     font-size: 1.1rem;
-    color: white;
+
     transition: background-color 0.3s ease;
   }
   
@@ -94,6 +102,7 @@
     font-size: 1rem;
     color: #777;
   }
+
   
   .view-recipe-btn {
     background-color: #ff6347;
@@ -108,4 +117,6 @@
   .view-recipe-btn:hover {
     background-color: #ff3e1d;
   }
+
+  
   

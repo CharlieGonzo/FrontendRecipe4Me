@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Alert from 'react-bootstrap/Alert';
 import './LoginForm.css';
-import HomePage from "./HomePage";
 import { useNavigate } from "react-router-dom";
 
 
@@ -10,7 +9,7 @@ function LoginPage(){
   const [password, setPassword] = useState('');
   const [loginError,setLoginError] = useState(false);
   const [serverError,setServerError] = useState(false);
-  const [isLoggedIn,setLoggedIn] = useState(false);
+
   const navigate = useNavigate(); // Use hook here
 
   const handleSubmit = async () => {

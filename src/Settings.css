@@ -1,0 +1,47 @@
+.settings-background {
+    background-image: url('https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: white;
+}
+
+
+
+.card {
+    background: rgba(0, 0, 0, 0.85); /* Darker background for better contrast */
+    border: none;
+    border-radius: 15px;
+    padding: 2rem; /* Added padding for better spacing */
+}
+
+.form-label {
+    color: #fff;
+}
+
+.form-control {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    color: #fff; /* White text */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.btn-danger {
+    background-color: #ff5733; /* Red accent color */
+    border: none;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.btn-danger:hover {
+    background-color: #c70039; /* Darker red on hover */
+}
+
+.text-muted {
+    color: rgba(255, 255, 255, 0.8); /* Muted text color for instructions */
+}
